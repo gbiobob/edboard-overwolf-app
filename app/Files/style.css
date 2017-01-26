@@ -1,0 +1,344 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2) {
+
+  html {
+    zoom: 130%;
+  }
+
+}
+
+html {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: rgba(0,0,0,0.01);
+}
+
+iframe#datas {
+  float: right;
+}
+.resizeGrip {
+  background: rgba(0, 0, 0, 0.5);
+	border: 1px solid blue;
+	position: absolute;
+}
+
+#content {
+  opacity: 1;
+  position: relative;
+  margin: 10px 0;
+	padding: 0;
+  text-align: right;
+}
+#content.hide-1,
+#content.hide-2 {
+  opacity: 0.1;
+  transition   : all 1s;
+}
+#content.hide-2 {
+  opacity: 0;
+}
+#content.hide-1:hover,
+#content.hide-2:hover {
+  opacity: 1;
+}
+#content.hide-1 #infos,
+#content.hide-2 #infos {
+  opacity: 0;
+  transition   : all 0.5s;
+}
+#content.hide-1:hover #infos
+#content.hide-2:hover #infos {
+  opacity: 1;
+}
+
+#taskbar {
+  position: absolute;
+  top: 7px;
+  right: 20px;
+}
+
+.color-chooser {
+  background: rgba(0,0,0,0.5);
+  padding: 7px;
+  margin: 40px 0 0;
+  text-align: center;
+}
+
+#color-pick {
+  background: #111;
+  padding: 4px;
+  border: solid 1px #ccc;
+  font-family: Courier;
+  font-size: 1.1rem;
+}
+
+.color-opt {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#resizeGripTop {
+	height: 10px;
+	top: 0;
+	left: 10px;
+	right: 10px;
+	cursor: ns-resize;
+}
+
+#resizeGripBottom {
+	height: 10px;
+	bottom: 0;
+	left: 10px;
+	right: 10px;
+	cursor: ns-resize;
+}
+
+#resizeGripLeft {
+	width: 10px;
+	left: 0;
+	top: 10px;
+	bottom: 10px;
+	cursor: ew-resize;
+}
+
+#resizeGripRight {
+	width: 10px;
+	right: 0;
+	top: 10px;
+	bottom: 10px;
+	cursor: ew-resize;
+}
+
+#resizeGripTopLeft {
+	width: 10px;
+	height: 10px;
+	top: 0;
+	left: 0;
+	cursor: nwse-resize;
+}
+
+#resizeGripBottomLeft {
+	width: 10px;
+	height: 10px;
+	bottom: 0;
+	left: 0;
+	cursor: nesw-resize;
+}
+
+#resizeGripTopRight {
+	width: 10px;
+	height: 10px;
+	top: 0;
+	right: 0;
+	cursor: nesw-resize;
+}
+
+#resizeGripBottomRight {
+  width : 10px;
+  height: 10px;
+  bottom: 0;
+  right : 0;
+  cursor: nwse-resize;
+}
+
+a.button {
+  display      : inline-block;
+  border       : 3px solid #FD610F;
+  background   : rgba(0,0,0,0.5);
+  box-shadow   : 1px 1px 5px rgba(10, 10, 10, 0.5);
+  width        : 32px;
+  height       : 32px;
+  line-height  : 32px;
+  border-radius: 100%;
+  color        : #FD610F;
+  text-align   : center;
+  font-family  : Arial;
+  margin       : 0 5px 10px;
+  cursor       : pointer;
+  transition   : all 0.3s;
+}
+a.button:hover {
+  border: 3px solid #fff !important;
+  box-shadow: 0 0 5px rgba(10, 10, 10, 0.5);
+  color: #fff !important;
+}
+a.button.mini {
+  color: #AF420C;
+  border-color: #AF420C;
+  opacity: 0;
+}
+
+#content:hover .mini {
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255,255,255, 0);
+    -webkit-border-radius: 100px;
+}
+::-webkit-scrollbar:hover {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(20, 20, 20, 0.5);
+    -webkit-border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active  {
+    background: rgba(20, 20, 20, 0.9);
+}
+
+
+
+
+#infos {
+  position: relative;
+  width: 100%;
+  min-height: 30px;
+  margin-top: 10px;
+}
+#action {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+}
+#action a {
+  position: absolute;
+  font-size: 14px;
+  color: #FD610F;
+  cursor: pointer;
+  background: rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+#action a:hover {
+  color: #fff;
+}
+#action a#reload {
+  right: 10px;
+}
+
+
+.lang {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  background: #111;
+  color: #FD610F;
+  border: solid 1px #FD610F;
+  box-shadow: 1px 1px 3px #000;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.lang:hover {
+  color: #eee;
+}
+
+/* Logo */
+
+#header {
+  padding: 40px;
+  text-align: center;
+}
+
+.logo,
+.logo:before,
+.logo:after {
+  display      : inline-block;
+  width        : 60px;
+  height       : 60px;
+  line-height  : 60px;
+  text-align   : center;
+  border-radius: 50%;
+}
+.logo {
+  position: relative;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  background: #888;
+  font-size: 1.5rem;
+  border: solid 2px #A15F26;
+  background: rgba(100, 100, 100, 0.5);
+  vertical-align: middle;
+  box-shadow: inset 3px 3px 35px #000;
+  z-index: 1;
+  color: #fff;
+}
+.logo:before,
+.logo:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  box-shadow: -15px -15px 50px rgb(200, 110, 37);
+}
+.logo:before {
+  box-shadow: 0 15px 50px #2659A0;
+}
+.logo2 {
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  vertical-align: middle;
+  line-height: 70px;
+  z-index: 2;
+  text-shadow: 0 0 5px #000;
+}
+
+
+
+/* Optionnal show : icons to right */
+
+
+.vertical #taskbar_btns {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+.vertical #taskbar_btns .button {
+  display: block;
+}
+.vertical #infos {
+  right: 50px !important;
+}

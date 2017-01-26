@@ -1,0 +1,75 @@
+{
+	"manifest_version":1,
+	"type":"WebApp",
+	"meta":{
+		"name":"E:D-Board",
+		"version":"1.1.3",
+		"minimum-overwolf-version":"0.77.10",
+		"author":"Cmdr Biobob",
+		"icon":"IconMouseOver.png",
+		"icon_gray":"IconMouseNormal.png",
+		"description":"ED-Board - Tools for Elite:Dangerous (a Cmdr logbook and more ...)"
+  },
+  "externally_connectable": {
+      "matches": [
+      ]
+  },
+	"data": {
+		"start_window":"MainWindow",
+		"windows":{
+			"MainWindow":{
+					"file":"Files/index.html",
+					"transparent":true,
+					"resizable":false,
+					"size":{"width":340, "height":460},
+          "start_position": {
+            "top": 20,
+            "left": 20
+          }
+				},
+      "SubRadio":{
+          "file":"Files/radio.html",
+          "transparent":true,
+          "resizable":true,
+          "size":{"width":600, "height":500},
+          "in_game_only":false
+        },
+			"SubNotes":{
+					"file":"Files/note.html",
+					"transparent":true,
+					"resizable":true,
+					"size":{"width":500, "height":800},
+					"in_game_only":false
+				},
+      "SubCmdr":{
+          "file":"Files/cmdr.html",
+          "transparent":true,
+          "resizable":true,
+          "size":{"width":500, "height":800},
+          "in_game_only":false
+        },
+      "SubGroup":{
+          "file":"Files/group.html",
+          "transparent":true,
+          "resizable":true,
+          "size":{"width":850, "height":800},
+          "in_game_only":false
+        },
+      "SubHangar":{
+          "file":"Files/hangar.html",
+          "transparent":true,
+          "resizable":true,
+          "size":{"width":850, "height":800},
+          "in_game_only":false
+        },
+      "SubWiki":{
+          "file":"Files/wiki.html",
+          "transparent":true,
+          "resizable":true,
+          "size":{"width":850, "height":800},
+          "in_game_only":false
+        }
+
+		}
+	}
+}

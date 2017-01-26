@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>E:D-Board</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="libs/jquery/jquery-2.1.3.min.js"></script>
+    <script src="edboard.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400|Orbitron:500' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body id="main" data-color="">
+
+    <!-- LANGAGE CHOOSE -->
+
+    <div id="lang_choose" onmousedown="dragMove();">
+      <a class="button" onclick="closeWindow();"><i class="fa fa-close"></i></a>
+      <div id="header"><span class="logo">E:D</span> <span class="logo2">Board</span></div>
+      <a class="lang" data-lang="en">English</a>
+      <a class="lang" data-lang="fr">français</a>
+      <a class="lang" data-lang="ru">русский</a>
+      <a class="lang" data-lang="es">Español</a>
+
+      <div class="color-chooser">
+        <a class="color-opt" data-color="FD610F"></a>
+        <a class="color-opt" data-color="FF8C0D"></a>
+        <a class="color-opt" data-color="D6311B"></a>
+        <a class="color-opt" data-color="FF5956"></a>
+        <a class="color-opt" data-color="3AB1FC"></a>
+        <a class="color-opt" data-color="72FCFD"></a>
+        <a class="color-opt" data-color="A1FF49"></a><br/>
+
+        #<input id="color-pick" size="6" maxlength="6" value="666666"/>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+		<div id="content">
+      <a class="button mini" id="open-options"><i class="fa fa-cog fa-fw"></i></a>
+      <a class="button mini orientation"><i class="fa fa-ellipsis-h"></i></a>
+      <a class="button mini orientation" style="display:none;"><i class="fa fa-ellipsis-v"></i></a>
+      <a class="button mini" id="open-subwindow" onclick="openSubRadio();"><i class="fa fa-music fa-fw"></i></a>
+      <a class="button mini auto_hide hide-0"><i class="fa fa-eye"></i></a>
+      <a class="button mini auto_hide hide-1" style="display:none;"><i class="fa fa-eye-slash"></i></a>
+      <a class="button mini auto_hide hide-2" style="display:none;"><i class="fa fa-eye-slash" style="opacity:0.5;"></i></a>
+      <a class="button mini" onmousedown="dragMove();"><i class="fa fa-arrows fa-fw"></i></a>
+      <a class="button mini" onclick="closeWindow();"><i class="fa fa-close fa-fw"></i></a><br/>
+      <div id="taskbar_btns">
+			  <a class="button" id="open-subwindow" onclick="openSubCmdr();"><i class="fa fa-user fa-fw"></i></a>
+        <a class="button" id="open-subwindow" onclick="openSubNotes();"><i class="fa fa-pencil fa-fw"></i></a>
+        <a class="button" id="open-subwindow" onclick="openSubHangar();"><i class="fa fa-space-shuttle fa-fw"></i></a>
+        <a class="button" id="open-subwindow" onclick="openSubGroup();"><i class="fa fa-users fa-fw"></i></a>
+        <a class="button" id="open-subwindow" onclick="openSubWiki();"><i class="fa fa-question fa-fw"></i></a>
+      </div>
+
+      <div id="radio"></div>
+
+      <div id="infos">
+        <div id="action">
+          <a class="toggle close"><i class="fa fa-minus-square fa-fw"></i></a><a class="toggle open" style="display:none;"><i class="fa fa-plus-square fa-fw"></i></a>
+          <a id="reload"><i class="fa fa-refresh fa-fw"></i></a>
+        </div>
+        <iframe id="datas" data-url="/overwolf/datas.php?log" width="80%" height="380" border="0"></iframe>
+      </div>
+    </div>
+
+
+
+	</body>
+</html>

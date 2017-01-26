@@ -1,0 +1,22 @@
+<h3>E:D-Board, a tool for Elite:Dangerous</h3>
+ED-Board is a log book & more for commanders who want to keep informations about their interstellar trips.
+(an account on the web application en.ed-board.net is needed, registration can be made directly from the Overwolf app)
+
+<h3>Main features</h3>
+- Log book : enter informations for yourself on everything (like a notepad) & since recently register your current trades routes (find by yourself or on a third party tools),<br/>
+- Cmdr page : register your position, ranks, levels and credit benefits,<br/>
+- Dock : register your owned ship and track you progress to buy a more expensive ship (based on your benefits),<br/>
+- Groups : create a private group (name, small desc & url of your group / guild / community, ...), invite members, share your position & make schedules between member to organize cooperative flights (Wings),<br/>
+- choose the application color theme to fit with your HUD color,<br/>
+- get an in-game wiki,<br/>
+- listen E:D related radios.
+
+<h3>ED-Board web application</h3>
+More functionalities on the website :<br/>
+- Stats : personal stats & comparison with community global stats (ranks, levels, ...)<br/>
+- Ranks to compare yourself with other users<br/>
+<br/>
+Links for ed-board.net : <a href="en.ed-board.net">English</a>, <a href="ed-board.net">français</a>, <a href="ru.ed-board.net">русский</a>, <a href="es.ed-board.net">Español</a>
+
+<h3>Contact</h3>
+For feedback, bug or asking for new features contact me at : contact@ed-board.net
