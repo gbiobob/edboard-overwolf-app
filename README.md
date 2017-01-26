@@ -3,7 +3,9 @@
 An Elite: Dangerous app for Overwolf overlay (embed the en.ed-board.net app).
 
 ED-Board is a log book & more for commanders who want to keep informations about their interstellar trips.
-(an account on the web application en.ed-board.net is needed, registration can be made directly from the Overwolf app)
+(an account on the web application en.ed-board.net is needed, registration can be made directly from the Overwolf app).
+
+[Get the app on Overwolf](http://store.overwolf.com/app/ED-Board)
 
 ## Main features
 - Log book : enter informations for yourself on everything (like a notepad) & since recently register your current trades routes (find by yourself or on a third party tools),
