@@ -21,3 +21,9 @@ ED-Board is a log book & more for commanders who want to keep informations about
 * French
 * Russian
 * Spanish
+
+## Screenshots
+
+![In-game usage](/store/Screenshot1.jpg?raw=true "")
+![In-game usage](/store/Screenshot2.jpg?raw=true "")
+![In-game usage](/store/Screenshot3.jpg?raw=true "")
