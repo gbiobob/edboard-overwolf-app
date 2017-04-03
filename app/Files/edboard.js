@@ -175,6 +175,10 @@ function getUrlLang() {
       return 'ru.ed-board.net';
       break;
 
+    case 'de':
+      return 'de.ed-board.net';
+      break;
+
     case 'es':
       return 'es.ed-board.net';
       break;

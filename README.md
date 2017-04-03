@@ -19,6 +19,7 @@ ED-Board is a log book & more for commanders who want to keep informations about
 ## Languages available
 * English
 * French
+* German
 * Russian
 * Spanish
 
