@@ -2,7 +2,7 @@
  * Main vars
  */
 
-var baseurlEdB = 'en.ed-board.net';
+var baseurlEdB = 'ed-board.net/en';
 
 /**
  * Page launch
@@ -115,14 +115,14 @@ function loadDatas() {
   var lang = localStorage.getItem('lang');
   var color = localStorage.getItem('opt_color');
 
-  baseurlEdB = getUrlLang();
+  var baselang = getUrlLang();
 
   var params = $('#datas').attr('data-url');
   if (color!='' && color!='undefined' && color!='null') {
     params += '&color='+color;
     colorUI(color);
   }
-  $('#datas').attr('src', 'http://'+baseurlEdB+params+'&utm_source=overwolf&utm_medium=app&utm_campaign=ovedboard');
+  $('#datas').attr('src', 'https://ed-board.net'+params+'&lang='+baselang+'&utm_source=overwolf&utm_medium=app&utm_campaign=ovedboard');
 }
 
 /**
@@ -168,24 +168,28 @@ function getUrlLang() {
 
   switch(lang) {
     case 'fr':
-      return 'ed-board.net';
+      return 'fr';
       break;
 
     case 'ru':
-      return 'ru.ed-board.net';
+      return 'ru';
       break;
 
     case 'de':
-      return 'de.ed-board.net';
+      return 'de';
       break;
 
     case 'es':
-      return 'es.ed-board.net';
+      return 'es';
+      break;
+
+    case 'pt':
+      return 'pt';
       break;
 
     case 'en':
     default:
-      return 'en.ed-board.net';
+      return 'en';
       break;
   }
 }
